@@ -11,7 +11,7 @@
     place-items: center;
   background-color: #202123;   /* Цвет фона для меню */
   color: white;               /* Цвет текста */
-  padding: 20px;              /* Внутренний отступ */
+  padding: 0px;              /* Внутренний отступ */
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
 }
 

@@ -1,5 +1,5 @@
 /* Стили для затемнения фона */
-.modal-overlay {
+.modalOverlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +13,7 @@
   }
   
   /* Стили для содержимого модального окна */
-  .modal-content {
+  .modalContent {
     background-color: #202123;
     padding: 20px;
     border-radius: 8px;

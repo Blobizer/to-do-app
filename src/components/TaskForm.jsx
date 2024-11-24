@@ -1,6 +1,5 @@
-import classes from '../styles/app.module.css'
 import { useState } from 'react';
-import CreateWindow from './UI/modal/CreateWindow.jsx';
+import CreateWindow from './UI/modal/CreateForm/CreateWindow.jsx';
 import MyButton from './UI/button/MyButton.jsx';
 
 function TaskForm({create}) {

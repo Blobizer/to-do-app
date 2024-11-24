@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import TaskForm from './components/TaskForm.jsx';
 import TaskList from './components/TaskList.jsx';
+import Profile from './components/Profile.jsx';
 import classes from './styles/app.module.css'
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
     <>
     <div className={classes.container}>
       <div className={classes.menu}>
-        <div className={classes.headmenu}>Menu</div>
+        <Profile/>
         <TaskForm  create={createPost}/>
       </div>
 

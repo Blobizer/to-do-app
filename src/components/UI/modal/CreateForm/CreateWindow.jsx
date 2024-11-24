@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import './modal.css'
-import MyButton from '../button/MyButton';
-import MyInput from '../Input/MyInput';
+import classes from'./modal.module.css'
+import MyButton from '../../button/MyButton';
+import MyInput from '../../Input/MyInput';
 
 function CreateWindow({addNewPost,isOpen, closeModal }) {
   const [post, setPost] = useState({ title: '', body: '' })
@@ -15,8 +15,8 @@ function CreateWindow({addNewPost,isOpen, closeModal }) {
       
 
   return (
-    <div className="modal-overlay">
-      <div className="modal-content">
+    <div className={classes.modalOverlay}>
+      <div className={classes.modalContent}>
         <h2>Создайте задачу</h2>
         <div>Укажите заголовок</div>
         <MyInput
