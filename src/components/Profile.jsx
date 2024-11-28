@@ -5,14 +5,17 @@ import ProfileModal from "./UI/modal/ProfileForm/ProfileModal";
 function Profile() {
     const [isModalOpen, setIsModalOpen] = useState(false); // Состояние для открытия/закрытия модального окна
 
-    const openModal = () => setIsModalOpen(true); // Открыть модальное окно
-    const closeModal = () => setIsModalOpen(false); // Закрыть модальное окно
-  
-  
+    const toggleModal = () => {
+      setIsModalOpen(!isModalOpen);
+    };
+    
+   
   return (
       <>
-      <ProfileModal isOpen={isModalOpen} closeModal={closeModal}></ProfileModal>
-      <MyButton onClick={openModal}>Profile</MyButton>
+      <ProfileModal 
+      isOpen={isModalOpen} 
+      ></ProfileModal>
+      <MyButton onClick={toggleModal}>Profile</MyButton>
       
       </>
   )
