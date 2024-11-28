@@ -1,10 +1,10 @@
-.myInput{
-    width: 150px;
-    height: 7px;
-    padding: 5px 15px;
-    margin: 10px 0;
-    border: 1px solid teal;
-    border-radius: 15px;
-    color: #eaeaea;
-    background-color: #343541;
+.myInput {
+  width: 150px;
+  height: 7px;
+  padding: 5px 15px;
+  margin: 10px 0;
+  border: 1px solid teal;
+  border-radius: 15px;
+  color: #eaeaea;
+  background-color: #343541;
 }

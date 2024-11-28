@@ -1,37 +1,36 @@
 /* Контейнер для Grid */
 .container {
-  display: grid;              /* Включаем Grid */
+  display: grid; /* Включаем Grid */
   grid-template-columns: 180px 1fr; /* Первая колонка фиксированная, вторая занимает остаток */
-  height: 100vh;              /* Высота контейнера на весь экран */
-  overflow: hidden;           /* Убираем прокрутку внутри контейнера (если требуется) */
+  height: 100vh; /* Высота контейнера на весь экран */
+  overflow: hidden; /* Убираем прокрутку внутри контейнера (если требуется) */
 }
 
 /* Левое меню */
 .menu {
-    place-items: center;
-  background-color: #202123;   /* Цвет фона для меню */
-  color: white;               /* Цвет текста */
-  padding: 0px;              /* Внутренний отступ */
+  place-items: center;
+  background-color: #202123; /* Цвет фона для меню */
+  color: white; /* Цвет текста */
+  padding: 0px; /* Внутренний отступ */
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
 }
 
 /* Контент */
 .content {
-    color: #EAEAEA;
-  background-color: #343541;   /* Цвет фона для контента */
-  padding: 20px;              /* Внутренний отступ */
+  color: #eaeaea;
+  background-color: #343541; /* Цвет фона для контента */
+  padding: 20px; /* Внутренний отступ */
 }
 
 /* Отключение прокрутки для всей страницы */
-html, body {
-    
-  margin: 0;                  /* Убираем отступы браузера */
-  overflow: hidden;           /* Отключаем прокрутку */
-  height: 100%;               /* Высота на весь экран */
+html,
+body {
+  margin: 0; /* Убираем отступы браузера */
+  overflow: hidden; /* Отключаем прокрутку */
+  height: 100%; /* Высота на весь экран */
 }
 
-.headmenu{
-    color: #EAEAEA;
-    background-color: #323539;
+.headmenu {
+  color: #eaeaea;
+  background-color: #323539;
 }
-

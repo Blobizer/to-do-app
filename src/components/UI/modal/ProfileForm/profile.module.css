@@ -4,7 +4,6 @@
   display: inline-block;
 }
 
-
 /* Выпадающее окно */
 .modalContent {
   padding: 8px;
@@ -12,7 +11,7 @@
   top: 100%; /* Позиционирование под кнопкой */
   left: 0;
   background-color: #202123;
-  box-shadow:  4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   margin-top: 10px; /* Отступ от кнопки */
   z-index: 100;

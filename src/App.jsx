@@ -3,40 +3,41 @@ import { useState } from 'react';
 import TaskForm from './components/TaskForm.jsx';
 import TaskList from './components/TaskList.jsx';
 import Profile from './components/Profile.jsx';
-import classes from './styles/app.module.css'
+import classes from './styles/app.module.css';
 
 function App() {
   const [posts, setPosts] = useState([
-    {id: 1, title: 'Заняться спортом', body: '10 отжиманий, 15 приседаний, 20 пресса'},
-    {id: 2, title: 'Учиться', body: 'Прочитать книги'},
-    {id: 3, title: 'Спать хорошо', body: 'Да и все'},
-  ])
-  
+    {
+      id: 1,
+      title: 'Заняться спортом',
+      body: '10 отжиманий, 15 приседаний, 20 пресса',
+    },
+    { id: 2, title: 'Учиться', body: 'Прочитать книги' },
+    { id: 3, title: 'Спать хорошо', body: 'Да и все' },
+  ]);
+
   const createPost = (newPost) => {
-    setPosts([...posts, newPost])
-  }
+    setPosts([...posts, newPost]);
+  };
 
   const removePost = (post) => {
-    setPosts(posts.filter(p => p.id !== post.id))
-  }
-  
-  
+    setPosts(posts.filter((p) => p.id !== post.id));
+  };
+
   return (
     <>
-    <div className={classes.container}>
-      <div className={classes.menu}>
-        <Profile/>
-        <TaskForm  create={createPost}/>
-      </div>
+      <div className={classes.container}>
+        <div className={classes.menu}>
+          <Profile />
+          <TaskForm create={createPost} />
+        </div>
 
-      <div className={classes.content}>
-        
-        <TaskList remove={removePost}posts={posts} title={"to-do"}/>
+        <div className={classes.content}>
+          <TaskList remove={removePost} posts={posts} title={'to-do'} />
+        </div>
       </div>
-    </div>
-
     </>
-  )
+  );
 }
 
-export default App
+export default App;
