@@ -19,6 +19,6 @@
 
 .myBtn:active{
     transform: scale(0.95); /* Сжатие кнопки */
-    background-color: #3e8e41; /* Изменение цвета при нажатии */
+    background-color: #154717; /* Изменение цвета при нажатии */
   }
 

@@ -1,0 +1,77 @@
+.todoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+  }
+
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .customCheckbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #008080;
+    border-radius: 15px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+
+  .customCheckbox::after {
+    content: '';
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) scale(0);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    position: absolute;
+  }
+
+  /* Галочка появляется при наведении */
+  .todoContainer:hover .customCheckbox::after {
+    transform: rotate(45deg) scale(1);
+    opacity: 1;
+  }
+
+  /* Анимация нажатия */
+  input[type="checkbox"]:active + .customCheckbox {
+    transform: scale(0.95);
+  }
+
+  /* Галочка остается видимой после нажатия */
+  input[type="checkbox"]:checked + .customCheckbox {
+    background-color: #012525;
+    border-color: #06c8c8;
+  }
+
+  input[type="checkbox"]:checked + .customCheckbox::after {
+    transform: rotate(45deg) scale(1);
+    opacity: 1;
+  }
+  .todoText {
+    flex-grow: 1;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+
+  input[type="checkbox"]:checked + .customCheckbox + .todoText {
+    color: #aaa;
+    text-decoration: line-through;
+  }

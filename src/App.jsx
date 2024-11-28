@@ -30,6 +30,7 @@ function App() {
       </div>
 
       <div className={classes.content}>
+        
         <TaskList remove={removePost}posts={posts} title={"to-do"}/>
       </div>
     </div>

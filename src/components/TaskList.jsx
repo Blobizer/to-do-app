@@ -18,7 +18,7 @@ const TaskList =({posts,  title, remove}) => {
             <h1 style={{textAlign: 'center'}}>
                 {title}
             </h1>
-          {posts.map((post,index) => 
+          {posts.map((post,index) =>             
             <TaskItem remove={remove} number={index + 1} post={post} key={post.id}/>
           )}
       </div>

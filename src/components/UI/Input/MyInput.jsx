@@ -1,6 +1,6 @@
 import classes from "./MyInput.module.css"
 
-const MyInput = (props, ref) => {
+const MyInput = (props) => {
 
   
   return (
