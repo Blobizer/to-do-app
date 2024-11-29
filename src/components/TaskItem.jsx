@@ -11,8 +11,9 @@ function TaskItem(props) {
         </MyCheckBox>
         <div>{props.post.body}</div>
       </div>
-      <div>
+      <div className="contents">
         <MyButton onClick={() => props.remove(props.post)}>Delete</MyButton>
+        <div>29.11.2024</div>
       </div>
     </div>
   );

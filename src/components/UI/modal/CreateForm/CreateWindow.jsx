@@ -14,8 +14,11 @@ function CreateWindow({ addNewPost, isOpen, closeModal }) {
   };
 
   return (
-    <div className={classes.modalOverlay}>
-      <div className={classes.modalContent}>
+    <div className={classes.modalOverlay} onClick={() => closeModal()}>
+      <div
+        className={classes.modalContent}
+        onClick={(e) => e.stopPropagation()}
+      >
         <h2>Создайте задачу</h2>
         <div>Укажите заголовок</div>
         <MyInput
