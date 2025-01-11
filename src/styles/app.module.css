@@ -1,4 +1,5 @@
 /* Контейнер для Grid */
+
 .container {
   display: grid; /* Включаем Grid */
   grid-template-columns: 180px 1fr; /* Первая колонка фиксированная, вторая занимает остаток */

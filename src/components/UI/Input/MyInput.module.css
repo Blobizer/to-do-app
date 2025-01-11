@@ -8,3 +8,7 @@
   color: #eaeaea;
   background-color: #343541;
 }
+
+.myInput:focus {
+  outline: none; /* Убирает стандартную обводку при фокусе */
+}

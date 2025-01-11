@@ -8,6 +8,7 @@ function ProfileModal({ isOpen }) {
   return (
     <div className={classes.modalOverlay}>
       <div className={classes.modalContent}>
+        <MyButton>Completed</MyButton>
         <MyButton>Settings</MyButton>
         <MyButton>Logout</MyButton>
         <div></div>

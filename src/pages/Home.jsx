@@ -1,11 +1,11 @@
 import { useState } from 'react';
 
-import TaskForm from './components/TaskForm.jsx';
-import TaskList from './components/TaskList.jsx';
-import Profile from './components/Profile.jsx';
-import classes from './styles/app.module.css';
+import TaskForm from '../components/TaskForm.jsx';
+import TaskList from '../components/TaskList.jsx';
+import Profile from '../components/Profile.jsx';
+import classes from '../styles/app.module.css';
 
-function App() {
+function Home() {
   const [posts, setPosts] = useState([
     {
       id: 1,
@@ -40,4 +40,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

@@ -1,0 +1,42 @@
+/* Устанавливаем стили для всей страницы */
+.body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #343541;
+  font-family: Arial, sans-serif;
+}
+
+/* Контейнер для формы входа */
+.loginContainer {
+  background-color: #ffffff; /* Цвет фона формы */
+  width: 400px; /* Ширина формы */
+  padding: 30px; /* Отступы внутри формы */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень вокруг формы */
+  border-radius: 10px; /* Скругленные углы */
+  text-align: center; /* Центрирование текста */
+}
+
+/* Заголовок формы */
+.loginContainer h2 {
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+/* Стили для полей ввода */
+.loginContainer input[type='text'],
+.loginContainer input[type='password'] {
+  width: 100%; /* Поля занимают всю ширину контейнера */
+  height: 30px;
+  padding: 8px; /* Отступ внутри поля */
+  margin: 10px 0; /* Отступы между полями */
+}
+
+.info a {
+  font-size: 12px;
+  color: grey;
+  text-decoration-color: grey;
+}
