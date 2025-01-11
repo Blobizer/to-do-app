@@ -5,12 +5,14 @@ import Home from './pages/Home';
 import LoginPage from './pages/LoginPage.jsx';
 import RegisterPage from './pages/RegisterPage.jsx';
 
-import { Route, Routes } from 'react-router';
+import { BrowserRouter, Route, Routes } from 'react-router';
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    {/* <LoginPage /> */}
-    {/* <RegisterPage /> */}
-    <Home />
-  </StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/register" element={<RegisterPage />} />
+    </Routes>
+  </BrowserRouter>
 );
