@@ -1,5 +1,4 @@
-import { useState } from 'react';
-
+import { useState, useEffect } from 'react';
 import TaskForm from '../components/TaskForm.jsx';
 import TaskList from '../components/TaskList.jsx';
 import Profile from '../components/Profile.jsx';
@@ -37,7 +36,7 @@ function Home() {
         </div>
 
         <div className={classes.content}>
-          <TaskList remove={removePost} posts={posts} title={'to-do'} />
+          <TaskList remove={removePost} />
         </div>
       </div>
     </>
