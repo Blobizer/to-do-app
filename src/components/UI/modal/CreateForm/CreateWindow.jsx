@@ -9,6 +9,10 @@ function CreateWindow({ addNewPost, isOpen, closeModal }) {
   if (!isOpen) return null; // Если модальное окно закрыто, ничего не рендерим
 
   const NewPostHandler = () => {
+    if (post.title === '') {
+      return alert('Укажите название ');
+    }
+
     addNewPost(post);
     setPost({ title: '', body: '' });
   };

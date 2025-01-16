@@ -7,17 +7,9 @@ import classes from '../styles/app.module.css';
 import MyButton from '../components/UI/button/MyButton.jsx';
 import { useNavigate } from 'react-router';
 
-function Home() {
+function Completed() {
   let navigate = useNavigate();
-  const [posts, setPosts] = useState([
-    {
-      id: 1,
-      title: 'Заняться спортом',
-      body: '10 отжиманий, 15 приседаний, 20 пресса',
-    },
-    { id: 2, title: 'Учиться', body: 'Прочитать книги' },
-    { id: 3, title: 'Спать хорошо', body: 'Да и все' },
-  ]);
+  const [posts, setPosts] = useState([]);
 
   const createPost = (newPost) => {
     setPosts([...posts, newPost]);
@@ -32,7 +24,7 @@ function Home() {
       <div className={classes.container}>
         <div className={classes.menu}>
           <Profile />
-          <MyButton onClick={() => navigate('/completed')}>Completed</MyButton>
+          <MyButton onClick={() => navigate('/')}>Home</MyButton>
           <TaskForm create={createPost} />
         </div>
 
@@ -44,4 +36,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Completed;
