@@ -29,7 +29,7 @@ function Completed() {
         </div>
 
         <div className={classes.content}>
-          <TaskList remove={removePost} posts={posts} isLoading={false} />
+          {/* <TaskList remove={removePost} posts={posts} isLoading={false} /> */}
         </div>
       </div>
     </>

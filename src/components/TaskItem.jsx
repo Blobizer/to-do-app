@@ -4,7 +4,6 @@ import MyCheckBox from './UI/checkBox/MyCheckBox.jsx';
 
 function TaskItem(props) {
   const date = new Date(props.date);
-  console.log(props.date);
   const formattedDate = date.toLocaleString('ru-RU', {
     year: 'numeric',
     month: '2-digit',
@@ -12,7 +11,6 @@ function TaskItem(props) {
     hour: '2-digit',
     minute: '2-digit',
   });
-  console.log(props);
   if (props.isLoading) {
     return (
       <h1
